@@ -26,12 +26,14 @@ a. EC2 Instance: First, an EC2 instance is created and connected to PuTTY’s SS
 b. Java/ JDK: To install spark, java runtime of version 8 or above has to be installed.
 
 Figure 1: Java version
+
 ![alt text](https://github.com/WaniaKhance/Big-Data-Analysis-Using-Apache-Spark/blob/main/Picture1.png?raw=true)
 
 
 c. Apache Spark: Then Apache spark has been installed in the EC2 instance. The version can be seen in the following figure. 
 
 Figure 2: Spark version
+
 ![alt text](https://github.com/WaniaKhance/Big-Data-Analysis-Using-Apache-Spark/blob/main/Picture2.png?raw=true)
 
 
@@ -40,12 +42,13 @@ d. Path Environment: The path variable of the JDK and spark installation directo
    - ubuntu@ip-172-31-8-42:/vi /.bashrc
 
 Figure 3: Path to directories
+
 ![alt text](https://github.com/WaniaKhance/Big-Data-Analysis-Using-Apache-Spark/blob/main/Picture3.png?raw=true)
 
 
-2. Word Count Example
+ 2. Word Count Example
 
-We have implemented word count example using two methods; 1. Text file and 2. Manual Array.
+ We have implemented word count example using two methods; 1. Text file and 2. Manual Array.
 
    - Using Text File: First, a text file named as ’wania.txt’ with a sample lines of text is created and saved in the spark installation directory. Following commands are used for the program.
     
@@ -56,6 +59,7 @@ We have implemented word count example using two methods; 1. Text file and 2. Ma
      – Final Result: When all the keys are aggregated, we can see all the words with their counts in the result. Saving file in CSV format is optional.
 
 Figure 4: Word Count Program using Text File
+
 ![alt text](https://github.com/WaniaKhance/Big-Data-Analysis-Using-Apache-Spark/blob/main/Picture4.png?raw=true)
 
 
@@ -64,6 +68,7 @@ Figure 4: Word Count Program using Text File
      – sc.parallelize(): It creates an RDD from a list collection which will applied to further MapReduce paradigm.
     
 Figure 5: Word Count Program Through Manual Array
+
 ![alt text](https://github.com/WaniaKhance/Big-Data-Analysis-Using-Apache-Spark/blob/main/Picture5.png?raw=true)
 
 
