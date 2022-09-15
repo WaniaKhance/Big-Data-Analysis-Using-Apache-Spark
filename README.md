@@ -53,9 +53,13 @@ Figure 3: Path to directories
    - Using Text File: First, a text file named as ’wania.txt’ with a sample lines of text is created and saved in the spark installation directory. Following commands are used for the program.
     
      – sc.textFile(): It is used to read the file from the file system.
+     
      – flatMap(): It performs transformation operation which flattens the elements of RDD and returns a new RDD. The words in the text are separated on the basis of spaces and stored in an array.
+     
      – Map(): It is also performing transformation on every element of RDD and converting each word into key-value pair.
+     
      – reduceByKey(): It group by keys and performs aggregation on each key based on the word count of unique words.
+     
      – Final Result: When all the keys are aggregated, we can see all the words with their counts in the result. Saving file in CSV format is optional.
 
 Figure 4: Word Count Program using Text File
